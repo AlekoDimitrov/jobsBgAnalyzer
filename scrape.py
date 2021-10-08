@@ -52,6 +52,8 @@ pairsList = []
 page = 0
 category = 1
 
+
+# Loop for grabbing data from set number of pages (pages count up by 15, ex: 300 pages mean 300/15 = 20) from all categories (29)
 while True:
     if page == 300:
         page = 0
