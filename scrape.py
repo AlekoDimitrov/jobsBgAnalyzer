@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+import os
 
 
 def extract(page, category):
@@ -52,6 +53,9 @@ pairsList = []
 page = 0
 category = 1
 
+outputDir = './dataFolder'
+if not os.path.exists(outputDir):
+    os.mkdir(outputDir)
 
 # Loop for grabbing data from set number of pages (pages count up by 15, ex: 300 pages mean 300/15 = 20) from all categories (29)
 while True:
