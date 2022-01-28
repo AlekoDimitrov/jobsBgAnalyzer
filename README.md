@@ -1,4 +1,4 @@
-# jobsBgAnalyzer
+# jobsBgAnalyzer (deprecated)
 A script that goes through each IT category in jobs.bg and returns useful data that can later be used fo vizualzation.
 
 The program begins by doing an HTTP request and returns an HTML document. By using the BeautifulSoup library, we parse through the document and grab data. The program grabs skills, sections and salaries of each listing by default.
